@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta name="vieport" content="width=device-width,initial scale= 1.0">
+    <title>servicios.study-of-barbery</title>
+    <link rel="stylesheet" href="style-menu.css">
+    <link rel="stylesheet" href="style-formulario.css">
+</head>
+<body>
+    <header>
+        <div  class="content">
+           
+           
+            <div class="menu container">
+            <p class="logo">menu</p>
+            
+            <label for="menu">
+              
+            </label>
+            <nav class="navbar">
+                <ul class="lista-menu">
+                   
+                    <li> <a href="index.html">inicio</a></li>
+                    <li> <a href="servicios.html">servicios</a></li>
+                    <li> <a href="barberos.html">barberos</a></li>
+                    <li> <a href="galeria.html">galeria</a></li>
+                    <li> <a href="reserva.html">reserva</a></li>
+                    <li> <a href="productos.html"> productos </a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1>registro</h1>
+            <!-- Inicio del formulario de registro de usuario -->
+        
+    
+       
+        <div class="datos-registro">
+            <form action="registro.php" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+        
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+        
+                <label for="cedula">documento</label>
+                <input type="text" id="cedula" name="cedula" required>
+        
+                <label for="contrasena"> Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+        
+                <label for="confirmar_contrasena">Confirmar Contraseña</label>
+                <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+                
+                <form action="reserva.html">
+                    <input type="submit" value="Registrarse">
+                </form>
+                
+        
+            </form>
+        </div>
+</body>
+</html>

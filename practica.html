@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Barbero por Imagen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="barber-form" action="/procesar_formulario" method="post">
+        <input type="hidden" name="barber" id="barber-hidden">
+
+        <div class="barber-selection">
+            <div class="barber-option" onclick="selectBarber('barber1', event)">
+                <img src="barbero1.jpg" alt="Barbero 1">
+                <p>Barbero 1</p>
+            </div>
+            <div class="barber-option" onclick="selectBarber('barber2', event)">
+                <img src="barbero2.jpg" alt="Barbero 2">
+                <p>Barbero 2</p>
+            </div>
+            <div class="barber-option" onclick="selectBarber('barber3', event)">
+                <img src="barbero3.jpg" alt="Barbero 3">
+                <p>Barbero 3</p>
+            </div>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        function selectBarber(barberId, event) {
+            // Establece el valor del campo oculto con el ID del barbero seleccionado
+            document.getElementById('barber-hidden').value = barberId;
+            
+            // Quita la clase 'selected' de todas las opciones
+            var options = document.querySelectorAll('.barber-option');
+            options.forEach(option => option.classList.remove('selected'));
+            
+            // Añade la clase 'selected' a la opción clicada
+            event.currentTarget.classList.add('selected');
+        }
+                // Datos de ejemplo para disponibilidad
+                const availability = {
+            barber1: {
+                "2024-09-05": ["09:00", "10:00", "11:00"],
+                "2024-09-06": ["14:00", "15:00"]
+            },
+            barber2: {
+                "2024-09-05": ["12:00", "13:00"],
+                "2024-09-07": ["09:00", "10:00", "11:00", "12:00"]
+            },
+            barber3: {
+                "2024-09-08": ["10:00", "11:00", "12:00"],
+                "2024-09-09": ["13:00", "14:00"]
+            }
+        };
+
+        function updateDates() {
+            const barberSelect = document.getElementById('barber');
+            const dateSelect = document.getElementById('date');
+            const barber = barberSelect.value;
+            
+            dateSelect.innerHTML = '<option value="">-- Selecciona una fecha --</option>';
+            document.getElementById('hour').innerHTML = '<option value="">-- Selecciona una hora --</option>';
+
+            if (barber) {
+                const dates = Object.keys(availability[barber]);
+                dates.forEach(date => {
+                    const option = document.createElement('option');
+                    option.value = date;
+                    option.textContent = date;
+                    dateSelect.appendChild(option);
+                });
+            }
+        }
+
+        function updateHours() {
+            const barberSelect = document.getElementById('barber');
+            const dateSelect = document.getElementById('date');
+            const hourSelect = document.getElementById('hour');
+            const barber = barberSelect.value;
+            const date = dateSelect.value;
+
+            hourSelect.innerHTML = '<option value="">-- Selecciona una hora --</option>';
+
+            if (barber && date && availability[barber][date]) {
+                const hours = availability[barber][date];
+                hours.forEach(hour => {
+                    const option = document.createElement('option');
+                    option.value = hour;
+                    option.textContent = hour;
+                    hourSelect.appendChild(option);
+                });
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.inicio {
+    background-color:rgba(213, 226, 238, 0.8); 
+    padding: 10px;
+    border-radius: 100px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+
+
+.inicio h2 {
+    color: darkslategray;
+    text-align: center;
+}
+
+.inicio p {
+    color: darkcyan;
+    text-align: left;
+}
+
+.imagen-inicio {
+    text-align:center;
+    padding: 10px;
+    margin: 10px;
+}
+.menu img {
+    text-align:right;
+    width: 10%; 
+}

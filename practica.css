@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.barber-selection {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Asegura que las imágenes se envuelvan si no hay suficiente espacio horizontal */
+}
+
+.barber-option {
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid transparent;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+    width: 150px; /* Ajusta el tamaño según tus imágenes */
+}
+
+.barber-option img {
+    width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor */
+    height: auto;
+    border-radius: 8px;
+}
+
+.barber-option p {
+    margin-top: 8px;
+}
+
+.barber-option.selected {
+    border-color: #007bff; /* Color de borde cuando está seleccionado */
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}

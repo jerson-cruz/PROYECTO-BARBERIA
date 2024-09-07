@@ -1,0 +1,174 @@
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: serif;
+    background-image: url(imagenes/greyg1.jpeg);
+    background-size: cover; /* La imagen de fondo cubrirá completamente el área */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: auto; /* Permite el desplazamiento vertical */
+    margin: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1500px;
+    margin:0;
+}
+
+.content {
+    min-height: 80px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(128, 128, 128, 0.7) 50%,
+        rgba(128, 128, 128, 0.3) 100%
+    );
+    
+}
+
+.menu {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #333;
+    padding: 10px;
+    
+}
+
+.menu .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    background-color: #333;
+    padding: 10px;
+    z-index: 0; /* Asegura que el menú desplegable esté sobre otros contenidos */
+    
+}
+
+.menu:hover .navbar {
+    display: block;
+    
+}
+
+.menu .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu .navbar ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.menu .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.menu .navbar ul li a:hover {
+    background-color: darkgrey; /* Cambia el color de fondo al pasar el mouse */
+    color: black; /* Cambia el color del texto al pasar el mouse */
+}
+
+.logo {
+    font-size: 25px;
+    color: #DAA520;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+
+
+
+h1 {
+    margin: 50px 0 0 100px;
+    font: italic small-caps bold 40px/20px Georgia, serif;
+    text-align: center;
+    color:darkslategray;
+  
+}
+
+h2 {
+    margin: 50px auto;
+    text-align: center;
+}
+h4 {
+    margin: 50px auto;
+    text-align: center;
+    
+  
+}
+
+.ingreso-registro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+h3.registro {
+    color: darkgoldenrod;
+    margin-left: 90px;
+}
+
+h3.ingreso {
+    color: darkgoldenrod;
+    margin-right: 90px;
+}
+
+
+
+/* Estilos específicos para diferentes tamaños de pantalla */
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas de hasta 600px de ancho */
+    .menu {
+        position: relative;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .menu .navbar {
+        position: static;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu:hover .navbar {
+        display: flex;
+    }
+ 
+    .menu.container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    }
+        
+}
+
+    
+
+
+
+
+
+    
