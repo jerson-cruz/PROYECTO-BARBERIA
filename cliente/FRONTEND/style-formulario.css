@@ -1,111 +1,111 @@
 .datos-registro {
-    display flex;  Utilizar un contenedor flexible 
-    flex-direction column;  Alinear los elementos en columna 
-    align-items flex-start;  Alinear los elementos horizontalmente en el centro 
+    display: flex; /* Utilizar un contenedor flexible */
+    flex-direction: column; /* Alinear los elementos en columna */
+    align-items: flex-start; /* Alinear los elementos horizontalmente en el centro */
 }
 
 .datos-registro label,
 .datos-registro input {
-    margin-bottom 0px;  Espacio entre cada elemento 
-    align-self stretch;  Asegurar que los elementos se expandan horizontalmente 
-    width 100%;
+    margin-bottom: 0px; /* Espacio entre cada elemento */
+    align-self: stretch; /* Asegurar que los elementos se expandan horizontalmente */
+    width: 100%;
 }
 .datos-registro {
-    margin 80px;
-    align-itemscenter;
-     color darkgrey;
+    margin: 80px;
+    align-items:center;
+     color: darkgrey;
     
 }
 
 
 .datos-ingreso {
-    displayflex;
-    flex-direction column;
-    align-itemscenter;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
     }
     
 .datos-ingreso label,
 .datos-ingreso input {
    
-    align-self stretch;
-    width 100%;
-    color darkgrey;
+    align-self: stretch;
+    width: 100%;
+    color: darkgrey;
 }
 .datos-ingreso {
-    margin 80px;
+    margin: 80px;
 }
 .datos-ingreso li a {
-    color rgb(102, 104, 231);
+    color: rgb(102, 104, 231);
 
 }
 
 label {
-    display block;
-    margin-top 10px;
+    display: block;
+    margin-top: 10px;
     
 }
 
-input[type=text], input[type=password] {
-    width 100%;
-    padding 10px;
-    margin-top 5px;
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
 }
 
-input[type=submit] {
-    margin-top 5px;
-    padding 10px 20px;
-    background-colordarkslategray;
-    color white;
+input[type="submit"] {
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color:darkslategray;
+    color: white;
 }
 .iconos {
-    text-align center;
-    padding 60px 60px;
-    align-items flex-start;
-    gap 30px;
+    text-align: center;
+    padding: 60px 60px;
+    align-items: flex-start;
+    gap: 30px;
  
     
             
 }
 
 .iconos img {
-    width 50px;
-    height 50px;
-    border-radius50px; 
-    opacity 0.9;
-    margin-bottom 50px;
-    align-items flex-start;
-    object-fitcover;
+    width: 50px;
+    height: 50px;
+    border-radius:50px; 
+    opacity: 0.9;
+    margin-bottom: 50px;
+    align-items: flex-start;
+    object-fit:cover;
   
     
 }
 
-.iconos imghover {
-    transform scale(1.2);  
-    opacity 1.2;
+.iconos img:hover {
+    transform: scale(1.2);  
+    opacity: 1.2;
 
     
 }
 p {
-    color rgb(124, 111, 241);
+    color: rgb(124, 111, 241);
 }
     
 .content {
-    position relative;  Establece un contexto para los elementos posicionados 
+    position: relative; /* Establece un contexto para los elementos posicionados */
 }
 
 .boton-regresar {
-    position absolute; 
-    top 0;
-    right 0; 
-    padding 10px 20px;
-    background-color #162535;  Color de fondo 
-    color rgb(1, 211, 248);  Color del texto 
-    border none;  Sin borde 
-    border-radius 5px;  Esquinas redondeadas 
-    cursor pointer;  Cambia el cursor al pasar el ratón 
+    position: absolute; 
+    top: 0;
+    right: 0; 
+    padding: 10px 20px;
+    background-color: #162535; /* Color de fondo */
+    color: rgb(1, 211, 248); /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
    
 }
 
-.boton-regresarhover {
-    background-color #02644f;  Color de fondo al pasar el ratón 
+.boton-regresar:hover {
+    background-color: #02644f; /* Color de fondo al pasar el ratón */
 }
