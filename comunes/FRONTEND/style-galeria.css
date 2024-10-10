@@ -1,0 +1,39 @@
+.swiper{
+    background-color: rgba(213, 226, 238, 0.8);;
+    border-radius: 30px;
+    display: flex;
+    padding: 5px;
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+
+
+}
+
+
+img {
+    width: 100%;
+    border-radius: 50px;
+    margin-bottom: 50px;
+  
+}
+/* Efectos cuando el mouse pasa sobre las imágenes */
+img:hover {
+    transform: scale(0.8);                     /* Aumentar el tamaño de la imagen al pasar el mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* Añadir una sombra para dar efecto de profundidad */
+}
+.columnas {
+    flex:25%;
+    padding: 5px;
+  
+}
+.columnas img {
+    margin-top: 5px;
+    
+
+}
+
+h1 {
+    padding: 30px;
+    margin: 30px;
+}

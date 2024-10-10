@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta name="vieport" content="width=device-width,initial scale= 1.0">
+    <title>servicios.study-of-barbery</title>
+    <link rel="stylesheet" href="/comunes/FRONTEND/stle-menu.css">
+    <link rel="stylesheet" href="../FRONTEND/style-formulario-barbero.css">
+</head>
+<body>
+    <div class="menu container">
+        <a href="/cliente/FRONTEND/ingreso.html" class="boton-regresar">regresar</a>
+    </div>
+    <h1>Gestión de Barberos</h1>
+
+    <p id="mensaje"></p> <!-- Para mostrar mensajes -->
+
+    <!-- Formulario para agregar un nuevo barbero -->
+    <form method="post" action="../BACKEND/barberos.php">
+        <input type="text" name="nombre" placeholder="Nombre " required><br>
+        <input type="text" name="apellido" placeholder="Apellido" required><br>
+        <input type="text" name="ciudad" placeholder="Ciudad" required><br>
+        <input type="text" name="documento" placeholder="Documento" required><br>
+        <input type="text" name="celular" placeholder="Celular" required> <br>
+
+        <button type="submit" name="agregar">Agregar Barbero</button>
+    </form>
+
+    <h3>Lista de Barberos</h3>
+    <ul id="lista-barberos">
+        <li>No hay barberos registrados.</li> 
+    </ul>
+
+    <h3>Editar Barbero</h3>
+    <form method="post" action="../BACKEND/barberos.php" style="display:none;" id="form-editar">
+        <input type="hidden" name="id" id="editar-id">
+        <input type="text" name="nombre" id="editar-nombre" required>
+        <input type="text" name="apellido" id="editar-apellido" required>
+        <input type="text" name="ciudad" id="editar-ciudad" required>
+        <input type="text" name="documento" id="editar-documento" required>
+        <input type="text" name="celular" id="editar-celular" required>
+        <button type="submit" name="editar">Actualizar Barbero</button>
+    </form>
+
+    <script>
+        // Aquí puedes agregar JavaScript para manejar la lógica del frontend,
+        // como mostrar mensajes, manejar formularios y listas dinámicamente.
+    </script>
+</body>
+</html>

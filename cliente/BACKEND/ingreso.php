@@ -1,6 +1,6 @@
 <?php
 // Conexión con la base de datos
-include("conexion.php");
+include("./comunes/BACKEND/conexion.php");
 
 $cedula = $_POST['cedula'];
 $contrasenaIngresada = $_POST['contrasena'];
