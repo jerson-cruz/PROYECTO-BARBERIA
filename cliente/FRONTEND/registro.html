@@ -19,28 +19,24 @@
     <h1>perfil cliente</h1>
             <!-- Inicio del formulario de registro de usuario -->
         
-    
-       
-            <div class="datos-registro">
-                <form id="registroForm" action="registro.php" method="post" onsubmit="return validarContrasena()">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required>
+            <form id="registroForm" action="../BACKEND/ingreso.php" method="post" onsubmit="return validarContrasena()">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
             
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" name="apellido" required>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
             
-                    <label for="cedula">Documento</label>
-                    <input type="text" id="cedula" name="cedula" required>
+                <label for="cedula">Documento</label>
+                <input type="text" id="cedula" name="cedula" required>
             
-                    <label for="contrasena">Contraseña</label>
-                    <input type="password" id="contrasena" name="contrasena" required>
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" required>
             
-                    <label for="confirmar_contrasena">Confirmar Contraseña</label>
-                    <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+                <label for="confirmar_contrasena">Confirmar Contraseña</label>
+                <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
             
-                    <input type="submit" value="Registrarse">
-                </form>
-            </div>
+                <input type="submit" value="Registrarse">
+            </form>
             
             <script>
                 function validarContrasena() {
