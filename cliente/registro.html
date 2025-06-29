@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>servicios.study-of-barbery</title>
+    <link rel="stylesheet" href="style-menu.css">
+    <link rel="stylesheet" href="style-formulario.css">
+</head>
+<body>
+ 
+       
+            <div class="menu container">
+                <a href="ingreso.html" class="boton-regresar">regresar</a>
+            </div>
+        </div>
+   
+    <h1>registro</h1>
+            <!-- Inicio del formulario de registro de usuario -->
+        
+    
+       
+            <div class="datos-registro">
+                <form id="registroForm" action="registro.php" method="post" onsubmit="return validarContrasena()">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+            
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+            
+                    <label for="cedula">Documento</label>
+                    <input type="text" id="cedula" name="cedula" required>
+            
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+            
+                    <label for="confirmar_contrasena">Confirmar Contraseña</label>
+                    <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+            
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+            
+            <script>
+                function validarContrasena() {
+                    var contrasena = document.getElementById("contrasena").value;
+                    var confirmarContrasena = document.getElementById("confirmar_contrasena").value;
+            
+                    if (contrasena !== confirmarContrasena) {
+                        alert("Las contraseñas no coinciden.");
+                        return false; // Evita que se envíe el formulario
+                    }
+                    return true; // Permite que se envíe el formulario si coinciden
+                }
+            </script>
