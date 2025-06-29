@@ -1,0 +1,81 @@
+
+
+h3 {
+    color: #fd1010;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"] {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #131212;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #020213;
+    color: rgb(7, 224, 240);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #4cae4c;
+}
+
+#lista-barberos {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-barberos li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mensaje {
+    color: #d9534f; /* Color rojo para mensajes de error */
+    text-align: center;
+    margin: 20px 0;
+}
+
+#form-editar {
+    display: none; /* Oculta el formulario de editar inicialmente */
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    text-align: center; /* Centra el contenido dentro del menú */
+    margin:0; /* Espacio superior e inferior */
+}
+
+.boton-regresar {
+    display: inline-block; 
+    padding: 5px 10px; 
+    background-color: #032b2e; 
+    color: rgb(12, 227, 235); 
+
+
+}
+
+.boton-regresar:hover {
+    background-color: #e8eef5; /* Color de fondo al pasar el cursor */
+}
